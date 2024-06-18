@@ -1,9 +1,8 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import { stream } from 'hono/streaming'
-
 import {minioClient, S3_BUCKET} from './s3'
-import { readFile, readFiles, storeFile, readStream} from './files'
+import { readFiles, storeFile, readStream} from './files'
 
 const app = new Hono()
 
